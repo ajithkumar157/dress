@@ -31,18 +31,61 @@ main {
     padding: 2rem;
 }
 
-.featured {
+.featured, .catalog {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .dress {
     text-align: center;
+    margin: 1rem;
 }
 
 .dress img {
     max-width: 100%;
     height: auto;
+}
+
+.dress button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dress button:hover {
+    background-color: #555;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.contact label {
+    margin-top: 1rem;
+}
+
+.contact input, .contact textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.contact button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.contact button:hover {
+    background-color: #555;
 }
 
 footer {
